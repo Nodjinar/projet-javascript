@@ -80,11 +80,14 @@ if(userStock){
     login.innerText= "logOut";
     login.addEventListener("click", function (){
         window.localStorage.removeItem("user");
+        window.localStorage.removeItem("token");
         console.log("hello")
     })
     const ban = document.querySelector('.ban');
     ban.style.display="block";
 }
+
+
 
 
 
